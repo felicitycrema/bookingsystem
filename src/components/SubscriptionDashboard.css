@@ -1,0 +1,3013 @@
+/* =====================================================
+
+SUBSCRIPTION DASHBOARD
+
+\\===================================================== */
+
+.subscription-dashboard {
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+}
+
+/* =====================================================
+
+HEADER
+
+\===================================================== */
+
+.dashboard-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 24px;
+
+  margin-bottom: 24px;
+
+}
+
+.dashboard-header h1 {
+
+  margin: 0 0 6px;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: #14213d;
+
+}
+
+.dashboard-header p {
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+}
+
+/* =====================================================
+
+SUBSCRIPTION STATUS
+
+\===================================================== */
+
+.subscription-status {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+.plan-name {
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #14213d;
+
+}
+
+.status-badge {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: capitalize;
+
+}
+
+.status-trial {
+
+  background: #fff7ed;
+
+  color: #c2410c;
+
+}
+
+.status-active {
+
+  background: #ecfdf5;
+
+  color: #047857;
+
+}
+
+.status-past_due {
+
+  background: #fff7ed;
+
+  color: #c2410c;
+
+}
+
+.status-suspended {
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+}
+
+.status-cancelled {
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+}
+
+.status-expired {
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+}
+
+/* =====================================================
+
+SUMMARY
+
+\\===================================================== */
+
+.subscription-summary {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap:16px;
+
+  margin-bottom: 24px;
+
+}
+
+.subscription-summary > div {
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  padding: 18px 20px;
+
+  box-sizing: border-box;
+
+}
+
+.summary-label {
+
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.04em;
+
+}
+
+.subscription-summary strong {
+
+  display: block;
+
+  color: #14213d;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+}
+
+/* =====================================================
+
+WARNINGS
+
+\\===================================================== */
+
+.dashboard-warnings {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-bottom: 24px;
+
+}
+
+.warning {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 16px;
+
+  border: 1px solid #fed7aa;
+
+  border-radius: 8px;
+
+  background: #fff7ed;
+
+  color: #9a3412;
+
+  font-size: 14px;
+
+}
+
+.warning span:first-child {
+
+  font-size: 17px;
+
+}
+
+/* =====================================================
+
+USAGE GRID
+
+\\===================================================== */
+
+.usage-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+
+  margin-bottom: 24px;
+
+}
+
+.usage-card {
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+}
+
+.usage-card-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 16px;
+
+}
+
+.usage-card-header h3 {
+
+  margin: 0;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+.usage-card-header span {
+
+  color: #64748b;
+
+  font-size: 12px;
+
+}
+
+.usage-number {
+
+  margin-bottom: 14px;
+
+  color: #14213d;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+}
+
+.usage-number span {
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+}
+
+.progress-bar {
+
+  width: 100%;
+
+  height: 8px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: #e2e8f0;
+
+}
+
+.progress-fill {
+
+  height: 100%;
+
+  min-width: 0;
+
+  border-radius: 999px;
+
+  background: #2563eb;
+
+  transition: width 0.3s ease;
+
+}
+
+.usage-footer {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 9px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+}
+
+/* =====================================================
+
+CURRENT PLAN
+
+\\===================================================== */
+
+.plan-section {
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  padding: 24px;
+
+  margin-bottom: 24px;
+
+  box-sizing: border-box;
+
+}
+
+.plan-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 24px;
+
+  margin-bottom: 22px;
+
+}
+
+.plan-header h2 {
+
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+}
+
+.plan-header p {
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+}
+
+.plan-price {
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 5px;
+
+  white-space: nowrap;
+
+}
+
+.plan-price strong {
+
+  color: #14213d;
+
+  font-size: 24px;
+
+}
+
+.plan-price span {
+
+  color: #64748b;
+
+  font-size: 13px;
+
+}
+
+/* =====================================================
+
+FEATURES
+
+\\===================================================== */
+
+.plan-features {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px 30px;
+
+  margin-bottom: 24px;
+
+}
+
+.feature {
+
+  color: #334155;
+
+  font-size: 14px;
+
+}
+
+.feature span {
+
+  margin-right: 8px;
+
+  color: #15803d;
+
+  font-weight: 700;
+
+}
+
+/* =====================================================
+
+BUTTONS
+
+\\===================================================== */
+
+.upgrade-button {
+
+  border: 0;
+
+  border-radius: 7px;
+
+  padding: 11px 18px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease, transform 0.1s ease;
+
+}
+
+.upgrade-button:hover:not(:disabled) {
+
+  background: #1d4ed8;
+
+}
+
+.upgrade-button:active:not(:disabled) {
+
+  transform: translateY(1px);
+
+}
+
+.upgrade-button:disabled {
+
+  background: #cbd5e1;
+
+  cursor: not-allowed;
+
+}
+
+/* =====================================================
+
+UPGRADE OVERLAY
+
+\\===================================================== */
+
+.upgrade-overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  background: rgba(15, 23, 42, 0.62);
+
+  overflow-y: auto;
+
+}
+
+/* =====================================================
+
+UPGRADE MODAL
+
+\\===================================================== */
+
+.upgrade-modal {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  max-height: calc(100vh - 48px);
+
+  overflow-y: auto;
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+
+  0 25px 60px rgba(15, 23, 42, 0.25);
+
+}
+
+/* =====================================================
+
+MODAL HEADER
+
+\\===================================================== */
+
+.upgrade-modal-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+}
+
+.upgrade-modal-header h2 {
+
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+}
+
+.upgrade-modal-header p {
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+}
+
+.close-modal {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 34px;
+
+  height: 34px;
+
+  flex: 0 0 34px;
+
+  border: 0;
+
+  border-radius: 7px;
+
+  background: #f1f5f9;
+
+  color: #475569;
+
+  font-size: 23px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+}
+
+.close-modal:hover {
+
+  background: #e2e8f0;
+
+  color: #0f172a;
+
+}
+
+/* =====================================================
+
+BILLING SELECTOR
+
+\\===================================================== */
+
+.billing-selector {
+
+  display: flex;
+
+  width: fit-content;
+
+  padding: 4px;
+
+  margin-bottom: 22px;
+
+  border-radius: 8px;
+
+  background: #f1f5f9;
+
+}
+
+.billing-option {
+
+  min-width: 110px;
+
+  border:0;
+
+  border-radius: 6px;
+
+  padding: 9px 16px;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+.billing-option:hover {
+
+  color: #14213d;
+
+}
+
+.billing-option.active {
+
+  background: #ffffff;
+
+  color: #2563eb;
+
+  box-shadow:
+
+  0 1px 4px rgba(15, 23, 42, 0.12);
+
+}
+
+/* =====================================================
+
+PLAN SELECTION
+
+\\===================================================== */
+
+.plan-selection {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+
+}
+
+/* =====================================================
+
+PLAN OPTION
+
+\\===================================================== */
+
+.plan-option {
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+
+  border-color 0.2s ease,
+
+  box-shadow 0.2s ease,
+
+  transform 0.1s ease;
+
+}
+
+.plan-option:hover {
+
+  border-color: #93c5fd;
+
+  box-shadow:
+
+  0 8px 20px rgba(15, 23, 42, 0.08);
+
+  transform: translateY(-1px);
+
+}
+
+.plan-option.selected {
+
+  border-color: #2563eb;
+
+  background: #eff6ff;
+
+  box-shadow:
+
+  0 8px 24px rgba(37, 99, 235, 0.12);
+
+}
+
+/* =====================================================
+
+PLAN OPTION HEADER
+
+\\===================================================== */
+
+.plan-option-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
+
+}
+
+.plan-option-header h3 {
+
+  margin: 0;
+
+  color: #14213d;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+}
+
+.current-plan {
+
+  display: inline-flex;
+
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  background: #dcfce7;
+
+  color: #166534;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+}
+
+/* =====================================================
+
+PLAN OPTION PRICE
+
+\\===================================================== */
+
+.plan-option-price {
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 4px;
+
+  margin-bottom: 12px;
+
+}
+
+.plan-option-price strong {
+
+  color: #14213d;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+}
+
+.plan-option-price span {
+
+  color: #64748b;
+
+  font-size: 12px;
+
+}
+
+/* =====================================================
+
+PLAN OPTION DESCRIPTION
+
+\\===================================================== */
+
+.plan-option > p {
+
+  min-height: 42px;
+
+  margin: 0 0 16px;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+}
+
+/* =====================================================
+
+PLAN LIMITS
+
+\\===================================================== */
+
+.plan-option-limits {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #e2e8f0;
+
+}
+
+.plan-option-limits span {
+
+  color: #475569;
+
+  font-size: 12px;
+
+}
+
+/* =====================================================
+
+PLAN FEATURES
+
+\\===================================================== */
+
+.plan-option-features {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  margin-top: 14px;
+
+}
+
+.plan-option-features span {
+
+  color: #334155;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+
+}
+
+/* =====================================================
+
+SELECTED INDICATOR
+
+\\===================================================== */
+
+.selected-indicator {
+
+  margin-top: 16px;
+
+  padding: 8px 10px;
+
+  border-radius: 6px;
+
+  background: #dbeafe;
+
+  color: #1d4ed8;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+}
+
+/* =====================================================
+
+PLANS LOADING
+
+\\===================================================== */
+
+.plans-loading,
+
+.plans-empty {
+
+  padding: 40px 20px;
+
+  border: 1px dashed #cbd5e1;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+  text-align: center;
+
+}
+
+.plans-loading p,
+
+.plans-empty p {
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+}
+
+/* =====================================================
+
+UPGRADE ERROR
+
+\\===================================================== */
+
+.upgrade-error {
+
+  margin-top: 18px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 7px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  font-size: 13px;
+
+}
+
+/* =====================================================
+
+UPGRADE SUCCESS
+
+\\===================================================== */
+
+.upgrade-success {
+
+  margin-top: 18px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #bbf7d0;
+
+  border-radius: 7px;
+
+  background: #f0fdf4;
+
+  color: #166534;
+
+  font-size: 13px;
+
+}
+
+/* =====================================================
+
+UPGRADE ACTIONS
+
+\\===================================================== */
+
+.upgrade-actions {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 24px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e2e8f0;
+
+}
+
+.cancel-upgrade,
+
+.continue-upgrade {
+
+  min-width: 100px;
+
+  border-radius: 7px;
+
+  padding: 10px 18px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+.cancel-upgrade {
+
+  border: 1px solid #cbd5e1;
+
+  background: #ffffff;
+
+  color: #475569;
+
+}
+
+.cancel-upgrade:hover:not(:disabled) {
+
+  background: #f8fafc;
+
+}
+
+.continue-upgrade {
+
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+}
+
+.continue-upgrade:hover:not(:disabled) {
+
+  background: #1d4ed8;
+
+}
+
+.cancel-upgrade:disabled,
+
+.continue-upgrade:disabled {
+
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+}
+
+/* =====================================================
+
+CONFIRMATION PLAN
+
+\\===================================================== */
+
+.upgrade-confirmation-plan {
+
+  padding: 20px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+
+  margin-bottom: 18px;
+
+}
+
+.upgrade-confirmation-plan .summary-label {
+
+  color: #2563eb;
+
+}
+
+.upgrade-confirmation-plan h2 {
+
+  margin: 4px 0 7px;
+
+  color: #14213d;
+
+  font-size: 23px;
+
+}
+
+.upgrade-confirmation-plan p {
+
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+}
+
+/* =====================================================
+
+CONFIRMATION PRICE
+
+\\===================================================== */
+
+.upgrade-confirmation-price {
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 6px;
+
+  margin-bottom: 20px;
+
+}
+
+.upgrade-confirmation-price strong {
+
+  color: #14213d;
+
+  font-size: 30px;
+
+}
+
+.upgrade-confirmation-price span {
+
+  color: #64748b;
+
+  font-size: 13px;
+
+}
+
+/* =====================================================
+
+CONFIRMATION DETAILS
+
+\\===================================================== */
+
+.upgrade-confirmation-details {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1px;
+
+  margin-bottom: 20px;
+
+  overflow: hidden;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  background: #e2e8f0;
+
+}
+
+.upgrade-confirmation-details > div {
+
+  padding: 15px;
+
+  background: #ffffff;
+
+}
+
+.upgrade-confirmation-details span {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+}
+
+.upgrade-confirmation-details strong {
+
+  color: #14213d;
+
+  font-size: 14px;
+
+}
+
+/* =====================================================
+
+CONFIRMATION LIMITS
+
+\\===================================================== */
+
+.upgrade-confirmation-limits {
+
+  margin-bottom: 20px;
+
+  padding: 18px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  background: #f8fafc;
+
+}
+
+.upgrade-confirmation-limits h3 {
+
+  margin: 0 0 14px;
+
+  color: #14213d;
+
+  font-size: 15px;
+
+}
+
+.upgrade-confirmation-limits > div {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 8px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+
+}
+
+.upgrade-confirmation-limits > div:last-child {
+
+  border-bottom: 0;
+
+}
+
+.upgrade-confirmation-limits span {
+
+  color: #64748b;
+
+  font-size: 13px;
+
+}
+
+.upgrade-confirmation-limits strong {
+
+  color: #14213d;
+
+  font-size: 13px;
+
+}
+
+/* =====================================================
+
+PAYMENT NOTICE
+
+\\===================================================== */
+
+.upgrade-payment-notice {
+
+  margin-bottom: 20px;
+
+  padding: 15px 17px;
+
+  border-left: 4px solid #2563eb;
+
+  border-radius: 6px;
+
+  background: #eff6ff;
+
+}
+
+.upgrade-payment-notice strong {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #1e40af;
+
+  font-size: 14px;
+
+}
+
+.upgrade-payment-notice p {
+
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+}
+
+/* =====================================================
+
+LOADING / ERROR
+
+\\===================================================== */
+
+.dashboard-loading {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 300px;
+
+  color: #64748b;
+
+}
+
+.dashboard-error {
+
+  max-width: 600px;
+
+  margin: 60px auto;
+
+  padding: 24px;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 10px;
+
+  background: #fef2f2;
+
+  text-align: center;
+
+}
+
+.dashboard-error strong {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #b91c1c;
+
+  font-size: 17px;
+
+}
+
+.dashboard-error p {
+
+  margin: 0 0 18px;
+
+  color: #7f1d1d;
+
+  font-size: 14px;
+
+}
+
+.dashboard-error button {
+
+  border: 0;
+
+  border-radius: 7px;
+
+  padding: 10px 18px;
+
+  background: #b91c1c;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+.dashboard-error button:hover {
+
+  background: #991b1b;
+
+}
+
+/* =====================================================
+
+RESPONSIVE — TABLET
+
+\\===================================================== */
+
+@media (max-width: 1100px) {
+
+  .subscription-summary {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+.usage-grid {
+
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.plan-selection {
+
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+}
+
+/* =====================================================
+
+RESPONSIVE — MOBILE
+
+\\===================================================== */
+
+@media (max-width: 700px) {
+
+  .subscription-dashboard {
+
+    padding: 16px;
+
+  }
+
+.dashboard-header {
+
+  flex-direction: column;
+
+}
+
+.subscription-status {
+
+  width: 100%;
+
+  justify-content: flex-start;
+
+}
+
+.subscription-summary {
+
+  grid-template-columns: 1fr;
+
+}
+
+.usage-grid {
+
+  grid-template-columns: 1fr;
+
+}
+
+.plan-header {
+
+  flex-direction: column;
+
+}
+
+.plan-features {
+
+  grid-template-columns: 1fr;
+
+}
+
+.plan-selection {
+
+  grid-template-columns: 1fr;
+
+}
+
+.upgrade-overlay {
+
+  align-items: flex-start;
+
+  padding: 12px;
+
+}
+
+.upgrade-modal {
+
+  max-height: calc(100vh - 24px);
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+}
+
+.upgrade-modal-header h2 {
+
+  font-size: 20px;
+
+}
+
+.upgrade-confirmation-details {
+
+  grid-template-columns: 1fr;
+
+}
+
+.upgrade-actions {
+
+  flex-direction: column-reverse;
+
+}
+
+.cancel-upgrade,
+
+.continue-upgrade {
+
+  width: 100%;
+
+}
+
+}
+
+/* =====================================================
+
+SMALL MOBILE
+
+\\===================================================== */
+
+@media (max-width: 420px) {
+
+  .subscription-dashboard {
+
+    padding: 12px;
+
+  }
+
+.plan-section {
+
+  padding: 18px;
+
+}
+
+.upgrade-modal {
+
+  padding: 16px;
+
+}
+
+.billing-selector {
+
+  width: 100%;
+
+}
+
+.billing-option {
+
+  flex: 1;
+
+}
+
+}
+
+/* =====================================================
+
+PAYMENT HISTORY
+
+\\===================================================== */
+
+.payment-history-section {
+
+  margin-top: 30px;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+
+}
+
+.payment-history-header {
+
+  margin-bottom: 20px;
+
+}
+
+.payment-history-header h2 {
+
+  margin: 0 0 6px;
+
+  font-size: 22px;
+
+}
+
+.payment-history-header p {
+
+  margin: 0;
+
+  color: #6b7280;
+
+}
+
+.payment-history-table-wrapper {
+
+  width: 100%;
+
+  overflow-x: auto;
+
+}
+
+.payment-history-table {
+
+  width: 100%;
+
+  min-width: 900px;
+
+  border-collapse: collapse;
+
+}
+
+.payment-history-table th,
+
+.payment-history-table td {
+
+  padding: 14px 12px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e5e7eb;
+
+}
+
+.payment-history-table th {
+
+  background: #f8fafc;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+.payment-history-table td {
+
+  font-size: 14px;
+
+}
+
+.payment-transaction-id {
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+}
+
+.payment-status-badge {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: capitalize;
+
+}
+
+.payment-status-successful {
+
+  background: #dcfce7;
+
+  color: #166534;
+
+}
+
+.payment-status-pending {
+
+  background: #fef3c7;
+
+  color: #92400e;
+
+}
+
+.payment-status-failed {
+
+  background: #fee2e2;
+
+  color: #991b1b;
+
+}
+
+.payment-status-refunded {
+
+  background: #e0e7ff;
+
+  color: #3730a3;
+
+}
+
+.payment-history-loading {
+
+  padding: 30px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+}
+
+.payment-history-empty {
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: #f8fafc;
+
+  border-radius: 8px;
+
+}
+
+.payment-history-empty h3 {
+
+  margin: 0 0 8px;
+
+}
+
+.payment-history-empty p {
+
+  margin: 0;
+
+  color: #6b7280;
+
+}
+
+@media (max-width: 768px) {
+
+  .payment-history-section {
+
+    padding: 16px;
+
+  }
+
+.payment-history-table {
+
+  min-width: 900px;
+
+}
+
+}
+
+/* =====================================================
+
+PAYMENT RECEIPT MODAL
+
+\\===================================================== */
+
+.receipt-overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(15, 23, 42, 0.65);
+
+}
+
+.receipt-modal {
+
+  width: 100%;
+
+  max-width: 650px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow:
+
+  0 20px 50px rgba(0, 0, 0, 0.25);
+
+}
+
+/* =====================================================
+
+RECEIPT HEADER
+
+\\===================================================== */
+
+.receipt-header {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  padding: 24px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+}
+
+.receipt-header h2 {
+
+  margin: 0 0 5px;
+
+  font-size: 22px;
+
+  color: #0f172a;
+
+}
+
+.receipt-header p {
+
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #64748b;
+
+}
+
+.receipt-header .close-modal {
+
+  width: 36px;
+
+  height: 36px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #f1f5f9;
+
+  font-size: 24px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+}
+
+.receipt-header .close-modal:hover {
+
+  background: #e2e8f0;
+
+}
+
+/* =====================================================
+
+RECEIPT CONTENT
+
+\\===================================================== */
+
+.receipt-content {
+
+  padding: 28px;
+
+}
+
+.receipt-business {
+
+  text-align: center;
+
+}
+
+.receipt-business h3 {
+
+  margin: 0 0 6px;
+
+  font-size: 18px;
+
+  color: #0f172a;
+
+}
+
+.receipt-business p {
+
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #64748b;
+
+}
+
+.receipt-divider {
+
+  height: 1px;
+
+  margin: 22px 0;
+
+  background: #e5e7eb;
+
+}
+
+/* =====================================================
+
+PAYMENT DETAILS
+
+\\===================================================== */
+
+.receipt-details {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+}
+
+.receipt-row {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+}
+
+.receipt-row span {
+
+  color: #64748b;
+
+  font-size: 14px;
+
+}
+
+.receipt-row strong {
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+  text-align: right;
+
+}
+
+.receipt-reference {
+
+  font-family: monospace;
+
+  font-size: 12px !important;
+
+  word-break: break-all;
+
+}
+
+.receipt-paid {
+
+  color: #15803d !important;
+
+}
+
+/* =====================================================
+
+TOTAL
+
+\\===================================================== */
+
+.receipt-total {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+}
+
+.receipt-total span {
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #475569;
+
+}
+
+.receipt-total strong {
+
+  font-size: 22px;
+
+  color: #0f172a;
+
+}
+
+/*=====================================================
+SUBSCRIPTION PERIOD
+===================================================== */
+
+.receipt-subscription {
+
+  margin-top: 24px;
+
+}
+
+.receipt-subscription h4 {
+
+  margin: 0 0 14px;
+
+  font-size: 15px;
+
+  color: #0f172a;
+
+}
+
+.receipt-period {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+}
+
+.receipt-period > div {
+
+  padding: 14px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+}
+
+.receipt-period span {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 12px;
+
+  color: #64748b;
+
+}
+
+.receipt-period strong {
+
+  font-size: 14px;
+
+  color: #0f172a;
+
+}
+
+/* =====================================================
+
+RECEIPT FOOTER
+
+\\===================================================== */
+
+.receipt-footer {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  padding: 18px 24px;
+
+  border-top: 1px solid #e5e7eb;
+
+}
+
+.receipt-close-button {
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #0f172a;
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+.receipt-close-button:hover {
+
+  background: #1e293b;
+
+}
+
+/* =====================================================
+
+VIEW RECEIPT BUTTON
+
+\\===================================================== */
+
+.receipt-button {
+
+  padding: 6px 12px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #0f172a;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+.receipt-button:hover {
+
+  background: #f8fafc;
+
+  border-color: #94a3b8;
+
+}
+
+.receipt-unavailable {
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+}
+
+/* =====================================================
+
+PAYMENT HISTORY TABLE
+
+\\===================================================== */
+
+.payment-history-table-wrapper {
+
+  width: 100%;
+
+  overflow-x: auto;
+
+}
+
+.payment-history-table {
+
+  width: 100%;
+
+  min-width: 1000px;
+
+  border-collapse: collapse;
+
+}
+
+.payment-history-table th,
+
+.payment-history-table td {
+
+  padding: 14px 12px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  white-space: nowrap;
+
+}
+
+.payment-history-table th {
+
+  background: #f8fafc;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #334155;
+
+}
+
+.payment-history-table td {
+
+  font-size: 14px;
+
+  color: #334155;
+
+}
+
+.payment-transaction-id {
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+}
+
+/* =====================================================
+
+PAYMENT STATUS
+
+\\===================================================== */
+
+.payment-status-badge {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: capitalize;
+
+}
+
+.payment-status-successful {
+
+  background: #dcfce7;
+
+  color: #166534;
+
+}
+
+.payment-status-pending {
+
+  background: #fef3c7;
+
+  color: #92400e;
+
+}
+
+.payment-status-failed {
+
+  background: #fee2e2;
+
+  color: #991b1b;
+
+}
+
+.payment-status-refunded {
+
+  background: #e0e7ff;
+
+  color: #3730a3;
+
+}
+
+/* =====================================================
+
+MOBILE
+
+\\===================================================== */
+
+ @media (max-width: 768px) {
+  .receipt-overlay {
+    padding: 10px;
+  }
+.receipt-modal {
+  max-height: 95vh;
+}
+
+.receipt-content {
+  padding: 20px;
+}
+.receipt-row {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.receipt-row strong {
+  text-align: left;
+}
+
+.receipt-total {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.receipt-period {
+  grid-template-columns: 1fr;
+}
+
+.receipt-footer {
+  padding: 15px 20px;
+}
+
+} 
+
+/* =====================================================
+SUBSCRIPTION CANCELLATION / RESUME
+\\===================================================== */
+
+.subscription-cancellation-notice {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #f0c36d;
+  border-radius: 12px;
+  background: #fff8e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.subscription-cancellation-notice strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.subscription-cancellation-notice p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.subscription-cancellation-action {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel-subscription-button,
+
+.resume-subscription-button {
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 11px 18px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+
+  opacity 0.2s ease,
+
+  transform 0.2s ease;
+
+}
+
+.cancel-subscription-button {
+
+  background: #dc3545;
+
+  color: #ffffff;
+
+}
+
+.resume-subscription-button {
+
+  background: #198754;
+
+  color: #ffffff;
+
+}
+
+.cancel-subscription-button:hover:not(:disabled),
+
+.resume-subscription-button:hover:not(:disabled) {
+
+  transform: translateY(-1px);
+
+  opacity: 0.92;
+
+}
+
+.cancel-subscription-button:disabled,
+
+.resume-subscription-button:disabled {
+
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+}
+
+/* =====================================================
+
+SUBSCRIPTION PERIOD
+
+\\===================================================== */
+
+.receipt-period-card {
+
+  margin: 28px 0;
+
+  padding: 20px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 12px;
+
+  background: #f8fbff;
+
+}
+
+.receipt-period-header {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+
+}
+
+.receipt-period-header span {
+
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+}
+
+.receipt-period-header strong {
+
+  color: #0f172a;
+
+  font-size: 15px;
+
+}
+
+.receipt-period-icon {
+
+  width: 34px;
+
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #dcfce7;
+
+  color: #15803d;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: 800;
+
+}
+
+.receipt-period-grid {
+
+  display: grid;
+
+  grid-template-columns:
+
+  1fr auto 1fr;
+
+  align-items: center;
+
+  gap: 18px;
+
+}
+
+.receipt-period-item {
+
+  padding: 14px 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 9px;
+
+}
+
+.receipt-period-item span {
+
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+}
+
+.receipt-period-item strong {
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+}
+
+.receipt-period-arrow {
+
+  color: #94a3b8;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+}
+
+/* =========================================================
+   PAYMENT HISTORY - PROFESSIONAL TABLE
+========================================================= */
+
+.payment-history-section {
+  width: 100%;
+  margin-top: 30px;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.payment-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.payment-history-header h2 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.payment-history-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Scroll container */
+
+.payment-history-table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  background: #ffffff;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Table */
+
+.payment-history-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+  color: #334155;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* Table headings */
+
+.payment-history-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 15px 14px;
+  border-bottom: 1px solid #dbe3ee;
+  color: #475569;
+  background: #f8fafc;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Table cells */
+
+.payment-history-table tbody td {
+  padding: 14px;
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.payment-history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.payment-history-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.payment-history-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* Transaction reference */
+
+.payment-history-table .payment-transaction-id {
+  display: inline-block;
+  max-width: 220px;
+  overflow: hidden;
+  color: #1d4ed8;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* Amount column */
+
+.payment-history-table th:nth-child(5),
+.payment-history-table td:nth-child(5) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Provider */
+
+.payment-history-table th:nth-child(6),
+.payment-history-table td:nth-child(6) {
+  text-align: center;
+}
+
+/* Status badges */
+
+.payment-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 9px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.payment-status-successful {
+  border-color: #bbf7d0;
+  color: #166534;
+  background: #f0fdf4;
+}
+
+.payment-status-pending {
+  border-color: #fde68a;
+  color: #92400e;
+  background: #fffbeb;
+}
+
+.payment-status-failed {
+  border-color: #fecaca;
+  color: #991b1b;
+  background: #fef2f2;
+}
+
+.payment-status-cancelled {
+  border-color: #e2e8f0;
+  color: #475569;
+  background: #f1f5f9;
+}
+
+.payment-status-refunded {
+  border-color: #ddd6fe;
+  color: #5b21b6;
+  background: #f5f3ff;
+}
+
+/* Receipt button */
+
+.receipt-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+  color: #1d4ed8;
+  background: #eff6ff;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.receipt-button:hover {
+  border-color: #93c5fd;
+  background: #dbeafe;
+}
+
+.receipt-button:active {
+  transform: scale(0.98);
+}
+
+.receipt-button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.receipt-unavailable {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+/* Empty and loading states */
+
+.payment-history-empty,
+.payment-history-loading {
+  padding: 35px 20px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 9px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.payment-history-empty h3 {
+  margin: 0 0 8px;
+  color: #334155;
+  font-size: 16px;
+}
+
+.payment-history-empty p,
+.payment-history-loading {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.payment-history-empty p {
+  margin: 0;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+  .payment-history-section {
+    margin-top: 22px;
+    padding: 16px;
+  }
+
+  .payment-history-header {
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .payment-history-header h2 {
+    font-size: 19px;
+  }
+
+  .payment-history-table {
+    min-width: 1000px;
+  }
+
+  .payment-history-table thead th,
+  .payment-history-table tbody td {
+    padding: 12px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .payment-history-section {
+    padding: 12px;
+    border-radius: 9px;
+  }
+
+  .payment-history-header h2 {
+    font-size: 18px;
+  }
+
+  .payment-history-header p {
+    font-size: 12px;
+  }
+
+  .payment-history-table {
+    min-width: 980px;
+  }
+
+  .payment-history-table thead th {
+    font-size: 10px;
+  }
+
+  .payment-history-table tbody td {
+    font-size: 11px;
+  }
+}
